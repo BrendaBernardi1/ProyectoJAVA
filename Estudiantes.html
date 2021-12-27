@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estudiantes.css">
+    <title>Estudiantes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="logo" width="350px" height="150px"> 
+        </div>
+    </header>
+   <nav id="menulineup">
+        <ul>    
+            <a href="index.html">Inicio</a>
+            <a href="Estudiantes.html">Estudiantes</a>   
+        </ul> 
+    </nav>
+    <br>
+      <div>
+       <h1 style="text-align: center;">Ingrese los datos del alumno:</h1>
+       <div id="containerPrincipal">
+       <div style="text-align: center;">
+       <form id="formulario" method="post">
+        <label>Nombre y apellido:</label>
+        <input class="iText" type="text" name="nombre" id="iNombre" style="font-size: 20px;">
+    
+        <label>Nota del primer trimestre:</label>
+        <input class="iText" type="text" name="nota1" id="nota1" style="font-size: 20px;">
+
+        <label>Nota del segundo trimestre:</label>
+        <input class="iText" type="text" name="nota2" id="nota2" style="font-size: 20px;">
+
+        <label>Nota del tercer trimestre:</label>
+        <input class="iText" type="text" name="nota3" id="nota3" style="font-size: 20px;">
+        <div id="botones">
+           <input type="submit" id="btnSubmit" id="" value="Confirmar" class="boton">
+           <input type="button" id="btnMostrar" id="" value="Mostrar Todos" class="boton">
+           <input type="button" value="Calcular" onclick="Promedio();" class="boton">
+           <br>
+        </div>
+       </form>
+       <div id="alerta1" style="background-color: rgb(122, 240, 12); color: black;"></div>
+       <div id="alerta2" style="background-color: rgb(240, 58, 12); color: black;"></div>
+       <p id="promedio" style="background-color: black; color: blanchedalmond;"></p>
+    <div id="alumnoIngresado" style="background: rgb(214, 181, 32);">        
+    </div>
+    </div>
+    <div id="displayTodos" style="background: rgb(80, 108, 160);">
+    </div>  
+    <div id= "listaAlumnos"></div>  
+     </div>   
+      </div>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="miarchivo.js"></script>
+      
+</body>
+</html>
